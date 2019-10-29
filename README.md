@@ -7,12 +7,35 @@ Install and configure [Dockercheck](https://github.com/StuartApp/dockercheck)
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+### `dockercheck_version`
+
+Which `dockercheck` version to install.
+Default value: "v0.1"
+
+### `dockercheck_svc_user`
+
+The user that is going to run the service
+Default value: "docker"
+
+### `dockercheck_svc_group`
+
+The group that is going to run the service
+Default value: "docker"
+
+### `dockercheck_svc_state`
+
+Set the service state
+Default value: started
+
+### `dockercheck_svc_enabled`
+
+Enable or disable the service at boot time
+Default value: yes
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+Currently there are no dependencies
 
 Example Playbook
 ----------------
@@ -21,7 +44,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+         - { role: dockercheck }
 
 License
 -------
