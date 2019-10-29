@@ -1,0 +1,6 @@
+---
+dockercheck_version: "v0.1"
+dockercheck_svc_user: "docker"
+dockercheck_svc_group: "docker"
+dockercheck_svc_state: started
+dockercheck_svc_enabled: yes
