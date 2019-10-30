@@ -1,0 +1,14 @@
+[Unit]
+Description=Dockercheck health exporter
+Documentation=https://github.com/StuartApp/dockercheck
+After=docker.service network.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart={{dockercheck_path}}/dockercheck
+User={{dockercheck_svc_user}}
+Group={{dockercheck_svc_group}}

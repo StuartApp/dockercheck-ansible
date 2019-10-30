@@ -1,0 +1,17 @@
+---
+- name: Install dockercheck pip package
+  pip:
+    name: git+https://github.com/StuartApp/dockercheck@{{ dockercheck_version }}
+  notify: "restart dockercheck"
+
+- name: Add dockercheck systemd service unit
+  template:
+    src: "dockercheck.service.j2"
+    dest: "/etc/systemd/system/dockercheck.service"
+
+- name: Enable and start dockercheck service
+  systemd:
+    state: "{{ dockercheck_svc_state }}"
+    name: "dockercheck"
+    daemon_reload: yes
+    enabled: "{{ dockercheck_svc_enabled }}"

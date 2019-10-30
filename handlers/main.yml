@@ -1,0 +1,6 @@
+---
+- name: restart dockercheck
+  service:
+    name: dockercheck
+    state: restarted
+    enabled: "{{ dockercheck_svc_enabled }}"
