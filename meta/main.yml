@@ -1,6 +1,6 @@
 galaxy_info:
   author: Davide Ferrari
-  role_name: stuart.dockercheck
+  role_name: dockercheck
   description: Install and configure dockercheck
   company: Stuart Delivery S.L.
   license: GPL-3.0-only
