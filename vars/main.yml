@@ -4,3 +4,4 @@ dockercheck_svc_user: "docker"
 dockercheck_svc_group: "docker"
 dockercheck_svc_state: started
 dockercheck_svc_enabled: yes
+dockercheck_path: "/usr/local/bin"

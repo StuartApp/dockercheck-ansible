@@ -32,6 +32,12 @@ Default value: started
 Enable or disable the service at boot time
 Default value: yes
 
+### `dockercheck_path`
+
+Path to the installed executable
+Default value: "/usr/local/bin"
+
+
 Dependencies
 ------------
 
