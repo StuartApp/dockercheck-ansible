@@ -3,7 +3,6 @@
 
 Install and configure [Dockercheck](https://github.com/StuartApp/dockercheck)
 
-
 Role Variables
 --------------
 
@@ -15,12 +14,12 @@ Default value: "v0.1"
 ### `dockercheck_svc_user`
 
 The user that is going to run the service
-Default value: "docker"
+Default value: "root"
 
 ### `dockercheck_svc_group`
 
 The group that is going to run the service
-Default value: "docker"
+Default value: "root"
 
 ### `dockercheck_svc_state`
 

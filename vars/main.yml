@@ -1,7 +1,7 @@
 ---
-dockercheck_version: "v0.1"
-dockercheck_svc_user: "docker"
-dockercheck_svc_group: "docker"
+dockercheck_version: "v0.2"
+dockercheck_svc_user: "root"
+dockercheck_svc_group: "root"
 dockercheck_svc_state: started
 dockercheck_svc_enabled: yes
 dockercheck_path: "/usr/local/bin"
