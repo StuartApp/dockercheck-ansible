@@ -10,5 +10,6 @@ WantedBy=multi-user.target
 Type=simple
 Restart=always
 ExecStart={{dockercheck_path}}/dockercheck
+EnvironmentFile=-/etc/default/dockercheck
 User={{dockercheck_svc_user}}
 Group={{dockercheck_svc_group}}

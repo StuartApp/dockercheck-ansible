@@ -9,7 +9,12 @@
     src: "dockercheck.service.j2"
     dest: "/etc/systemd/system/dockercheck.service"
 
-- name: Enable and start dockercheck service
+- name: Add dockercheck default file
+  template:
+    src: "dockercheck.default.j2"
+    dest: "/etc/default/dockercheck"
+
+- name: Configure dockercheck service
   systemd:
     state: "{{ dockercheck_svc_state }}"
     name: "dockercheck"
