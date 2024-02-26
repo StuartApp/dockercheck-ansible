@@ -1,6 +1,6 @@
 ---
 # defaults file for dockercheck
-dockercheck_version: "v0.3"
+dockercheck_version: "v0.4"
 dockercheck_svc_state: started
 dockercheck_svc_enabled: yes
 dockercheck_listen_port: 8080
