@@ -41,4 +41,4 @@ GPLv3
 Author Information
 ------------------
 
-This role was created while working for Stuart Delivery. [We are hiring!](https://stuart.com/careers/)
+This role was created while working for Stuart Delivery.
