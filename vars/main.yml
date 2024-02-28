@@ -4,3 +4,4 @@ dockercheck_svc_group: "root"
 dockercheck_path: "/usr/local/bin"
 dockercheck_metric_name: "container_status"
 dockercheck_label: "com.docker.compose.project"
+disk_usage_threshold: 90
